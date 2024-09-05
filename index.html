@@ -109,19 +109,16 @@
             <div style="background-color: lightgrey; width:100%; height: 900px;">  
                 <h2>Categorise the event by the theme</h2>
             
-                <div>
-                    <label>
-                        <input type="radio" name="category" value="all" checked> All
-                    </label>
-                    <label>
-                        <input type="radio" name="category" value="rock"> Rock
-                    </label>
-                    <label>
-                        <input type="radio" name="category" value="pop"> Pop
-                    </label>
-                    <label>
-                        <input type="radio" name="category" value="jazz"> Jazz
-                    </label>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="categoryDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Select Category
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="categoryDropdown">
+                        <a class="dropdown-item" href="#" data-category="all">All</a>
+                        <a class="dropdown-item" href="#" data-category="rock">Rock</a>
+                        <a class="dropdown-item" href="#" data-category="pop">Pop</a>
+                        <a class="dropdown-item" href="#" data-category="jazz">Jazz</a>
+                    </div>
                 </div>   
          
                 <div class="row">
