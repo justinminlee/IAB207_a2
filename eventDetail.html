@@ -23,7 +23,7 @@
           <button class="btn btn-sm btn-outline-secondary" type="button" style="background-color: white; color: black;">Sign in</button>
           <button class="btn btn-sm btn-outline-secondary" type="button" style="background-color: black; color: white;">Register</button>
       </form>
-  </nav>
+    </nav>
 
     <div class="event-detail-container">
         <div class="event-header">
@@ -35,6 +35,9 @@
                 <span class="tag">Tag</span>
                 <p class="price">$50</p>
                 <p class="available-tickets">Available tickets: 50</p>
+                <p><strong>Date:</strong> 12/08/2024</p>
+                <p><strong>Time:</strong> 6:00 PM - 9:00 PM</p>
+                <p><strong>Venue:</strong> Brisbane Convention Center</p>
                 <label for="quantity">Ticket Quantity:</label>
                 <select id="quantity">
                     <option value="1">1</option>
@@ -48,58 +51,57 @@
             </div>
         </div>
 
-        <!-- Description Section -->
         <div class="description">
             <h2>Description of this event</h2>
-            <p>This is the body text for the event description. Add whatever details you'd like to say here. Provide details about the event, including the date, time, location, and any other important information.</p>
+            <p>This event will feature a series of speakers and performances from the best artists and thought leaders in the industry. It's a perfect networking opportunity!</p>
         </div>
 
-        <!-- Comments Section -->
         <div class="comments">
             <h3>Latest Comments</h3>
 
             <div class="comment-card">
                 <h4>Review Title</h4>
                 <p>Review body text about the event.</p>
-                <p><strong>Reviewer Name</strong> - Date</p>
+                <p><strong>Reviewer Name</strong> | Date: 29/08/2024</p>
             </div>
 
             <div class="comment-card">
                 <h4>Review Title</h4>
                 <p>Review body text about the event.</p>
-                <p><strong>Reviewer Name</strong> - Date</p>
+                <p><strong>Reviewer Name</strong> | Date: 06/09/2024</p>
             </div>
 
             <div class="comment-card">
                 <h4>Review Title</h4>
                 <p>Review body text about the event.</p>
-                <p><strong>Reviewer Name</strong> - Date</p>
+                <p><strong>Reviewer Name</strong> | Date: 14/09/2024</p>
+            </div>
+
+            <div class="add-comment">
+                <h4>Leave a Comment</h4>
+                <form>
+                    <div class="form-group">
+                        <label for="commentTitle">Comment Title</label>
+                        <input type="text" class="form-control" id="commentTitle" placeholder="Enter your comment title">
+                    </div>
+                    <div class="form-group">
+                        <label for="commentBody">Comment</label>
+                        <textarea class="form-control" id="commentBody" rows="3" placeholder="Enter your comment"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Comment</button>
+                </form>
             </div>
         </div>
 
         <footer class="text-center text-lg-start" style="background-color: white;">
             <div class="more events" style="background-color: grey;">
-              <p style="color : black">Find more events with our daily newsletter.</p>
+              <p style="color: black;">Find more events with our daily newsletter.</p>
               <input type="text" placeholder="Search for events">
               <button>Find</button>
               <br>
-              <a href="#" style="color : black">Home</a>
-              <a href="#" style="color : black">Contact</a>
-              <a href="#" style="color : black">About</a>
-            </div>
-            <div class="container d-flex justify-content-center py-5">
-              <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: grey;">
-                <a class="fa fa-facebook"></a>
-              </button>
-              <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: grey;">
-                <a class="fa fa-instagram"></a>
-              </button>
-              <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: grey;">
-                <a class="fa fa-twitter"></a>
-              </button>
-              <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: grey;">
-                <a class="fa fa-linkedin" href="https://www.linkedin.com/in/justin-lee-a15013276/"></a>
-              </button>
+              <a href="#" style="color: black;">Home</a>
+              <a href="#" style="color: black;">Contact</a>
+              <a href="#" style="color: black;">About</a>
             </div>
         
             <div class="text-center text-white p-3" style="background-color: black;">
