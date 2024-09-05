@@ -1,36 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<html>
-    <head>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="/Users/justinlee/Desktop/IAB207/main.css" />
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="/Users/justinlee/Desktop/IAB207/n11198885_Lee/static/style/index.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Detail</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/Users/justinlee/Desktop/IAB207/main.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/Users/justinlee/Desktop/IAB207/n11198885_Lee/static/style/detail.css">
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img src="/Users/justinlee/Desktop/IAB207/n11198885_Lee/static/img/homepage_icon.png" width="70" height="70" alt="">
+      </a>
+      <form class="form-inline">
+          <a class="nav-link" href="#" style="background-color: white; color: black;">Home <span class="sr-only">(current)</span></a>
+          <button class="btn btn-sm btn-outline-secondary" type="button" style="background-color: white; color: black;">Sign in</button>
+          <button class="btn btn-sm btn-outline-secondary" type="button" style="background-color: black; color: white;">Register</button>
+      </form>
+  </nav>
 
-    <body>
-        <nav class="navbar navbar-light bg-light">
-            <a class="navbar-brand" href="#">
-              <img src="/Users/justinlee/Desktop/IAB207/n11198885_Lee/static/img/homepage_icon.png" width="80" height="80" alt="">
-            </a>
-            <form class="form-inline">
-                <a class="nav-link" href="#" style="background-color: white; color: black;">Home <span class="sr-only">(current)</span></a>
-                <button class="btn btn-sm btn-outline-secondary" type="button" style="background-color: white; color: black;">Sign in</button>
-                <button class="btn btn-sm btn-outline-secondary" type="button" style="background-color: black; color: white;">Register</button>
-            </form>
-        </nav>
+    <div class="event-detail-container">
+        <div class="event-header">
+            <div class="event-image">
+                <img src="https://via.placeholder.com/300" alt="Event Image">
+            </div>
+            <div class="event-info">
+                <h1>Event Title</h1>
+                <span class="tag">Tag</span>
+                <p class="price">$50</p>
+                <p class="available-tickets">Available tickets: 50</p>
+                <label for="quantity">Ticket Quantity:</label>
+                <select id="quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                <br>
+                <button type="button">Buy</button>
+                <p class="total-price">Total Price: $50</p>
+            </div>
+        </div>
 
-        <div style="background-color: lightgrey; width: 100%; height: 1300px;"> 
-            <div style="background-color: lightgrey; width: 100%; height: 1300px;" id="welcome">  
+        <!-- Description Section -->
+        <div class="description">
+            <h2>Description of this event</h2>
+            <p>This is the body text for the event description. Add whatever details you'd like to say here. Provide details about the event, including the date, time, location, and any other important information.</p>
+        </div>
 
+        <!-- Comments Section -->
+        <div class="comments">
+            <h3>Latest Comments</h3>
 
-            </div>  
-        </div> 
+            <div class="comment-card">
+                <h4>Review Title</h4>
+                <p>Review body text about the event.</p>
+                <p><strong>Reviewer Name</strong> - Date</p>
+            </div>
+
+            <div class="comment-card">
+                <h4>Review Title</h4>
+                <p>Review body text about the event.</p>
+                <p><strong>Reviewer Name</strong> - Date</p>
+            </div>
+
+            <div class="comment-card">
+                <h4>Review Title</h4>
+                <p>Review body text about the event.</p>
+                <p><strong>Reviewer Name</strong> - Date</p>
+            </div>
+        </div>
 
         <footer class="text-center text-lg-start" style="background-color: white;">
+            <div class="more events" style="background-color: grey;">
+              <p style="color : black">Find more events with our daily newsletter.</p>
+              <input type="text" placeholder="Search for events">
+              <button>Find</button>
+              <br>
+              <a href="#" style="color : black">Home</a>
+              <a href="#" style="color : black">Contact</a>
+              <a href="#" style="color : black">About</a>
+            </div>
             <div class="container d-flex justify-content-center py-5">
               <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: grey;">
                 <a class="fa fa-facebook"></a>
@@ -50,8 +106,8 @@
               © 2024 Copyright:
               <a class="text-white" href="#">Minjae Lee</a>
             </div>
-          </footer>
-    </body>
-</html>
+        </footer>
+    </div>
 
- 
+</body>
+</html>

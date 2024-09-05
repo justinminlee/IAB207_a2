@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+/* Event Detail Container */
+.event-detail-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Event Image and Details Section */
+.event-header {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.event-image {
+    flex: 1;
+    padding: 20px;
+}
+
+.event-image img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+}
+
+.event-info {
+    flex: 2;
+    padding: 20px;
+}
+
+.event-info h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.event-info .tag {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #d4f8d4;
+    color: #4caf50;
+    font-size: 0.9em;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.event-info .price {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.event-info .available-tickets {
+    margin-bottom: 20px;
+}
+
+.event-info select {
+    padding: 5px;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.event-info button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.event-info button:hover {
+    background-color: #333;
+}
+
+.total-price {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+/* Description Section */
+.description {
+    margin-top: 50px;
+}
+
+.description h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+/* Comments Section */
+.comments {
+    margin-top: 50px;
+}
+
+.comments h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.comment-card {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.comment-card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.comment-card h4 {
+    margin-bottom: 5px;
+}
+
+/* Footer */
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
