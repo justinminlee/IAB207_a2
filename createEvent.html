@@ -1,52 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<html>
-    <head>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="/Users/justinlee/Desktop/IAB207/main.css" />
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="/Users/justinlee/Desktop/IAB207/n11198885_Lee/static/style/index.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Event</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/Users/justinlee/Desktop/IAB207/n11198885_Lee/static/style/create.css" />
+    
+</head>
 
-    <body>
-        <nav class="navbar navbar-light bg-light">
-            <a class="navbar-brand" href="#">
-              <img src="/Users/justinlee/Desktop/IAB207/n11198885_Lee/static/img/homepage_icon.png" width="80" height="80" alt="">
-            </a>
-            <form class="form-inline">
-                <a class="nav-link" href="#" style="background-color: white; color: black;">Home <span class="sr-only">(current)</span></a>
-                <button class="btn btn-sm btn-outline-secondary" type="button" style="background-color: white; color: black;">Sign in</button>
-                <button class="btn btn-sm btn-outline-secondary" type="button" style="background-color: black; color: white;">Register</button>
-            </form>
-        </nav>
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="/Users/justinlee/Desktop/IAB207/n11198885_Lee/static/img/homepage_icon.png" width="80" height="80" alt="">
+        </a>
+        <form class="form-inline">
+            <a class="nav-link" href="#" style="background-color: white; color: black;">Home <span class="sr-only">(current)</span></a>
+            <button class="btn btn-sm btn-outline-secondary" type="button" style="background-color: white; color: black;">Sign in</button>
+            <button class="btn btn-sm btn-outline-secondary" type="button" style="background-color: black; color: white;">Register</button>
+        </form>
+    </nav>
 
-        <div style="background-color: lightgrey; width: 100%; height: 1300px;"> 
-            <div style="background-color: lightgrey; width: 100%; height: 1300px;" id="welcome">  
+    <div class="container">
+        <h2>Create Event</h2>
+        <form>
+            <div class="form-group">
+                <label for="title">Event Title</label>
+                <input type="text" id="title" name="title" placeholder="Enter event title" required>
+            </div>
 
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea id="description" name="description" rows="4" placeholder="Enter event description" required></textarea>
+            </div>
 
-            </div>  
-        </div> 
+            <div class="form-group">
+                <label for="artist">Artist Name</label>
+                <input type="text" id="artist" name="artist" placeholder="Enter artist name" required>
+            </div>
 
-        <footer class="text-center text-lg-start" style="background-color: white;">
-          <div class="more events" style="background-color: grey;">
-            <p style="color: black;">Find more events with our daily newsletter.</p>
-            <input type="text" placeholder="Search for events">
-            <button>Find</button>
-            <br>
-            <a href="#" style="color: black;">Home</a>
-            <a href="#" style="color: black;">Contact</a>
-            <a href="#" style="color: black;">About</a>
-          </div>
-      
-          <div class="text-center text-white p-3" style="background-color: black;">
-            © 2024 Copyright:
-            <a class="text-white" href="#">Minjae Lee</a>
-          </div>
-      </footer>
-    </body>
+            <div class="form-group">
+                <label for="venue">Venue</label>
+                <input type="text" id="venue" name="venue" placeholder="Enter event venue" required>
+            </div>
+
+            <div class="form-group">
+                <label for="date">Date and Time</label>
+                <input type="datetime-local" id="date" name="date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="category">Category</label>
+                <select id="category" name="category" required>
+                    <option value="Music">Music</option>
+                    <option value="Art">Art</option>
+                    <option value="Sports">Sports</option>
+                    <option value="Technology">Technology</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="tickets">Number of Tickets Available</label>
+                <input type="number" id="tickets" name="tickets" placeholder="Enter number of tickets" required>
+            </div>
+
+            <div class="form-group">
+                <label for="image">Event Image</label>
+                <input type="file" id="image" name="image" accept="image/*" required>
+            </div>
+
+            <button type="submit" class="btn-create">Create Event</button>
+        </form>
+    </div>
+
+    <footer class="text-center text-lg-start" style="background-color: white;">
+      <div class="more events" style="background-color: grey;">
+        <p style="color: black;">Find more events with our daily newsletter.</p>
+        <input type="text" placeholder="Search for events">
+        <button>Find</button>
+        <br>
+        <a href="#" style="color: black;">Home</a>
+        <a href="#" style="color: black;">Contact</a>
+        <a href="#" style="color: black;">About</a>
+      </div>
+  
+      <div class="text-center text-white p-3" style="background-color: black;">
+        © 2024 Copyright:
+        <a class="text-white" href="#">Minjae Lee</a>
+      </div>
+    </footer>
+</body>
 </html>
-
- 
