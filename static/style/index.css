@@ -124,20 +124,6 @@ body, html {
     font-weight: bold;
 }
 
-/* Ensure cards fit within the grid and don't overlap */
-.col-sm-4 {
-    margin-bottom: 20px;
-    display: flex; /* Add flex to ensure cards are aligned properly */
-}
-
-.card-img-top {
-    width: 449px; /* Ensure the image takes the full width of the card */
-    height: auto; /* Maintain the aspect ratio */
-    object-fit: cover; /* Crop the image to fit the card's height if necessary */
-    max-height: 300px; /* You can set a max height to control the size */
-    border-radius: 5px; /* Optional: round the corners */
-}
-
 /* Footer */
 footer {
     margin-top: 50px;
@@ -155,4 +141,19 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+
+/* Ensure cards fit within the grid and don't overlap */
+.col-sm-4 {
+    margin-bottom: 20px;
+    display: flex; /* Add flex to ensure cards are aligned properly */
+}
+
+.card-img-top {
+    width: 449px; /* Ensure the image takes the full width of the card */
+    height: auto; /* Maintain the aspect ratio */
+    object-fit: cover; /* Crop the image to fit the card's height if necessary */
+    max-height: 300px; /* You can set a max height to control the size */
+    border-radius: 5px; /* Optional: round the corners */
 }
