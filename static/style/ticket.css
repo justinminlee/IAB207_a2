@@ -59,12 +59,26 @@ h2 {
     font-weight: bold;
 }
 
+
+/* Footer */
 footer {
     margin-top: 50px;
     padding: 20px;
-    background-color: white;
+    background-color: #333;
+    color: white;
     text-align: center;
 }
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
