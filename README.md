@@ -2,7 +2,7 @@ To adjust your project based on the assessment description and criteria, here ar
 
 # Home Page (10 marks):
 
--- Need to put date, time, loc ...etc on the event cards
+```Need to put date, time, loc ...etc on the event cards```
 
 Current Strengths: The homepage provides a clear welcome message and a search bar for users to find events. Categories and recent events are displayed, which is a great starting point.
 Improvements:
