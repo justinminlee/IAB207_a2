@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event Detail</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="/Users/justinlee/Desktop/IAB207/main.css" />
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -14,30 +12,52 @@
     <link rel="stylesheet" href="/Users/justinlee/Desktop/IAB207/n11198885_Lee/static/style/detail.css">
 </head>
 <body>
-    <nav class="navbar navbar-light bg-light">
-      <a class="navbar-brand" href="#">
-        <img src="/Users/justinlee/Desktop/IAB207/n11198885_Lee/static/img/homepage_icon.png" width="70" height="70" alt="">
-      </a>
-      <form class="form-inline">
-          <a class="nav-link" href="#" style="background-color: white; color: black;">Home <span class="sr-only">(current)</span></a>
-          <button class="btn btn-sm btn-outline-secondary" type="button" style="background-color: white; color: black;">Sign in</button>
-          <button class="btn btn-sm btn-outline-secondary" type="button" style="background-color: black; color: white;">Register</button>
-      </form>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="./index.html">
+            <img src="/Users/justinlee/Desktop/IAB207/n11198885_Lee/static/img/homepage_icon.png" width="50" height="50" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./createEvent.html">Create Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Help Centre</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="profileDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="https://via.placeholder.com/30" class="rounded-circle" alt="Profile Icon"> Justin Lee
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="profileDropdown">
+                        <a class="dropdown-item" href="#">My Account</a>
+                        <a class="dropdown-item" href="./bookTicket.html">My Booking</a>
+                        <a class="dropdown-item" href="./index.html">Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </nav>
 
     <div class="event-detail-container">
         <div class="event-header">
             <div class="event-image">
-                <img src="https://via.placeholder.com/300" alt="Event Image">
+                <img src="./static/img/eventimg1.jpeg" alt="Event Image">
             </div>
             <div class="event-info">
-                <h1>Event Title</h1>
-                <span class="tag">Tag</span>
+                <h1>Dusty Day Out</h1>
+                <span class="tag">Rock</span>
                 <p class="price">$50</p>
                 <p class="available-tickets">Available tickets: 50</p>
-                <p><strong>Date:</strong> 12/08/2024</p>
-                <p><strong>Time:</strong> 6:00 PM - 9:00 PM</p>
-                <p><strong>Venue:</strong> Brisbane Convention Center</p>
+                <p class="card-artist"><strong>Artist:</strong> Mr. Davis</p>
+                <p><strong>Date:</strong> 19/10/2024</p>
+                <p><strong>Time:</strong> 11:00 AM - 2:00 PM</p>
+                <p><strong>Venue:</strong> Dusty Hill Vineyard</p>
                 <label for="quantity">Ticket Quantity:</label>
                 <select id="quantity">
                     <option value="1">1</option>
@@ -52,31 +72,36 @@
         </div>
 
         <div class="description">
-            <h2>Description of this event</h2>
+            <h2><strong>Description of this event</strong></h2>
             <p>This event will feature a series of speakers and performances from the best artists and thought leaders in the industry. It's a perfect networking opportunity!</p>
         </div>
 
         <div class="comments">
-            <h3>Latest Comments</h3>
-
+            <h2><strong>Latest Comments</strong></h2>
             <div class="comment-card">
-                <h4>Review Title</h4>
-                <p>Review body text about the event.</p>
-                <p><strong>Reviewer Name</strong> | Date: 29/08/2024</p>
+                <h4>Amazing Experience!</h4>
+                <p>This event was beyond expectations. The energy was electrifying, and the performances were top-notch!</p>
+                <p><strong>Emily Watson</strong> | Date: 30/09/2024</p>
             </div>
-
+        
             <div class="comment-card">
-                <h4>Review Title</h4>
-                <p>Review body text about the event.</p>
-                <p><strong>Reviewer Name</strong> | Date: 06/09/2024</p>
+                <h4>Great Music, but Long Wait Times</h4>
+                <p>The music and venue were great, but the line for drinks was way too long. It would be better if they had more staff serving.</p>
+                <p><strong>Michael Brown</strong> | Date: 29/09/2024</p>
             </div>
-
+        
             <div class="comment-card">
-                <h4>Review Title</h4>
-                <p>Review body text about the event.</p>
-                <p><strong>Reviewer Name</strong> | Date: 14/09/2024</p>
+                <h4>Loved Every Second!</h4>
+                <p>I attended this event with friends, and we all had a blast! The vibe was perfect, and the venue was beautiful. Can’t wait for the next one.</p>
+                <p><strong>Jessica Lee</strong> | Date: 28/09/2024</p>
             </div>
-
+        
+            <div class="comment-card">
+                <h4>Fantastic Line-Up!</h4>
+                <p>Absolutely loved the variety of artists that performed. It was a perfect mix of genres and energy. Highly recommend it!</p>
+                <p><strong>Daniel Martinez</strong> | Date: 27/09/2024</p>
+            </div>
+        
             <div class="add-comment">
                 <h4>Leave a Comment</h4>
                 <form>
@@ -92,7 +117,6 @@
                 </form>
             </div>
         </div>
-    </div>
         <footer class="text-center text-lg-start" style="background-color: white;">
             <div class="more events" style="background-color: grey;">
               <p style="color: black;">Find more events with our daily newsletter.</p>

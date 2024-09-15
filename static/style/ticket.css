@@ -85,6 +85,17 @@ footer a:hover {
     text-decoration: underline;
 }
 
+.tag {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #d4f8d4;
+    color: #4caf50;
+    font-size: 0.9em;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+
 /* Mobile Responsive */
 @media (max-width: 768px) {
     .booking-item {

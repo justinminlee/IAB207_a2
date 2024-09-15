@@ -3,83 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Booking History</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Booking History</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/Users/justinlee/Desktop/IAB207/n11198885_Lee/static/style/ticket.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 <body>
-
-    <nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-          <img src="/Users/justinlee/Desktop/IAB207/n11198885_Lee/static/img/homepage_icon.png" width="70" height="70" alt="">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="./index.html">
+            <img src="/Users/justinlee/Desktop/IAB207/n11198885_Lee/static/img/homepage_icon.png" width="50" height="50" alt="">
         </a>
-        <form class="form-inline">
-            <a class="nav-link" href="#" style="background-color: white; color: black;">Home</a>
-            <button class="btn btn-sm btn-outline-secondary" type="button" style="background-color: white; color: black;">Sign in</button>
-            <button class="btn btn-sm btn-outline-secondary" type="button" style="background-color: black; color: white;">Register</button>
-        </form>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./createEvent.html">Create Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Help Centre</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="profileDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="https://via.placeholder.com/30" class="rounded-circle" alt="Profile Icon"> Justin Lee
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="profileDropdown">
+                        <a class="dropdown-item" href="#">My Account</a>
+                        <a class="dropdown-item" href="./bookTicket.html">My Booking</a>
+                        <a class="dropdown-item" href="./index.html">Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </nav>
 
-    <div class="container">
+      <div class="container">
         <h2>Your Booking History</h2>
         <div class="filter-section">
-          <form>
-              <label for="category">Filter by Category:</label>
-              <select id="categoryFilter">
-                  <option value="all">All</option>
-                  <option value="rock">Rock</option>
-                  <option value="pop">Pop</option>
-                  <option value="jazz">Jazz</option>
-              </select>
-          </form>
-      </div>
+            <form>
+                <label for="category">Filter by Category:</label>
+                <select id="categoryFilter">
+                    <option value="all">All</option>
+                    <option value="dance">DJ/Dance</option>
+                    <option value="rock">Rock</option>
+                    <option value="pop">Pop</option>
+                    <option value="jazz">Jazz</option>
+                </select>
+            </form>
+        </div>
 
         <div class="booking-item">
-            <img src="https://via.placeholder.com/150" alt="Event Image">
+            <img src="./static/img/eventimg1.jpeg" alt="Dusty Day Out">
             <div class="booking-info">
-                <h4>Event Name: Rock Concert 2024</h4>
+                <h4>Event Name: Dusty Day Out</h4>
+                <span class="tag">Rock</span>
+                <p>Artist: Mr. Davis</p>
                 <p>Booking ID: 591740</p>
-                <p>Booking Date: 2024-08-01</p>
-                <p>Booking Time: 14:30 PM</p>
+                <p>Booking Date: Sat, 19 Oct 2024</p>
+                <p>Booking Time: 11:00 AM</p>
                 <p class="booking-quantity">Quantity: 2 Tickets</p>
             </div>
             <div class="booking-details">
                 <p><strong>Order ID:</strong> #987654</p>
-                <p><strong>Booked on:</strong> 2024-07-25</p>
+                <p><strong>Booked on:</strong> Fri, 18 Oct 2024</p>
             </div>
         </div>
 
         <div class="booking-item">
-            <img src="https://via.placeholder.com/150" alt="Event Image">
+            <img src="./static/img/eventimg2.jpeg" alt="Soul Mass Transit System">
             <div class="booking-info">
-                <h4>Event Name: Jazz Night Festival</h4>
+                <h4>Event Name: Soul Mass Transit System</h4>
+                <span class="tag">Pop</span>
+                <p>Artist: David Johns</p>
                 <p>Booking ID: 155829</p>
-                <p>Booking Date: 2024-09-10</p>
-                <p>Booking Time: 18:00 PM</p>
+                <p>Booking Date: Fri, 27 Sept 2024</p>
+                <p>Booking Time: 9:00 PM</p>
                 <p class="booking-quantity">Quantity: 3 Tickets</p>
             </div>
             <div class="booking-details">
                 <p><strong>Order ID:</strong> #987655</p>
-                <p><strong>Booked on:</strong> 2024-08-20</p>
+                <p><strong>Booked on:</strong> Thursday, 26 Sept 2024</p>
             </div>
         </div>
- 
+
         <div class="booking-item">
-            <img src="https://via.placeholder.com/150" alt="Event Image">
+            <img src="./static/img/eventimg3.jpeg" alt="Super Concierto">
             <div class="booking-info">
-                <h4>Event Name: Pop Music Concert</h4>
+                <h4>Event Name: Super Concierto</h4>
+                <span class="tag">DJ/Dance</span>
+                <p>Artist: Jonny Delly</p>
                 <p>Booking ID: 104958</p>
-                <p>Booking Date: 2024-10-15</p>
-                <p>Booking Time: 09:00 AM</p>
+                <p>Booking Date: Fri, 27 Sept 2024</p>
+                <p>Booking Time: 9:00 PM</p>
                 <p class="booking-quantity">Quantity: 1 Ticket</p>
             </div>
             <div class="booking-details">
                 <p><strong>Order ID:</strong> #987656</p>
-                <p><strong>Booked on:</strong> 2024-09-30</p>
+                <p><strong>Booked on:</strong> Thursday, 26 Sept 2024</p>
             </div>
         </div>
     </div>
+
 
     <footer class="text-center text-lg-start" style="background-color: white;">
       <div class="more events" style="background-color: grey;">

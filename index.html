@@ -1,181 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-<html>
-    <head>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="/Users/justinlee/Desktop/IAB207/main.css" />
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="/Users/justinlee/Desktop/IAB207/n11198885_Lee/static/style/index.css">
-    </head>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css"> 
+    <title>Event Finder</title>
+</head>
 
-    <body>
-        <nav class="navbar navbar-light bg-light">
-            <a class="navbar-brand" href="#">
-              <img src="/Users/justinlee/Desktop/IAB207/n11198885_Lee/static/img/homepage_icon.png" width="70" height="70" alt="">
-            </a>
-            <form class="form-inline">
-                <a class="nav-link" href="#" style="background-color: white; color: black;">Home <span class="sr-only">(current)</span></a>
-                <button class="btn btn-sm btn-outline-secondary" type="button" style="background-color: white; color: black;">Sign in</button>
-                <button class="btn btn-sm btn-outline-secondary" type="button" style="background-color: black; color: white;">Register</button>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="./index.html">
+            <img src="/Users/justinlee/Desktop/IAB207/n11198885_Lee/static/img/homepage_icon.png" width="50" height="50" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./createEvent.html">Create Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Help Centre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./bookTicket.html">Log In</a>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-dark btn-sm">Sign Up</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="hero-section d-flex align-items-center" style="background-color: #512BD4; color: white; height: 400px; text-align: center;">
+        <div class="container">
+            <h1>Music Events</h1>
+            <p>Discover the best music events in Australia</p>
+            <form class="form-inline justify-content-center mt-4">
+                <div class="input-group">
+                    <input type="text" class="form-control form-input" placeholder="Search any events" id="search-input">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-light" type="button">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </div>
             </form>
-        </nav>
+        </div>
+    </div>
 
-        <div style="background-color: lightgrey; width: 100%; height: 2300px;"> 
-            <div style="background-color: lightgrey; width: 100%; height: 400px;" id="welcome">  
-                <h1>Welcome to Event Finder!</h1>
-                <p>Find event!</p>
-                <div class="form">
-                    <i class="fa fa-search"></i>
-                    <input type="text" class="form-control form-input" placeholder="Search any Events" id="search-input">
-                    <span class="left-pan"><i class="fa fa-microphone"></i></span>
+    <div class="container mt-5">
+        <h2 class="text-center">Explore what's popular within Music</h2>
+        <div class="d-flex justify-content-center mt-4">
+            <div class="category-scroll d-flex">
+                <div class="category-item text-center mx-3">
+                    <img src="https://via.placeholder.com/100" class="rounded-circle" alt="DJ/Dance">
+                    <p>DJ/Dance</p>
                 </div>
-            </div>  
+                <div class="category-item text-center mx-3">
+                    <img src="https://via.placeholder.com/100" class="rounded-circle" alt="Rock">
+                    <p>Rock</p>
+                </div>
+                <div class="category-item text-center mx-3">
+                    <img src="https://via.placeholder.com/100" class="rounded-circle" alt="Pop">
+                    <p>Pop</p>
+                </div>
+                <div class="category-item text-center mx-3">
+                    <img src="https://via.placeholder.com/100" class="rounded-circle" alt="Pop">
+                    <p>Jazz</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-            <div style="background-color: grey; width:100%; height: 1200px;">  
-                <h2>Recent Events</h2>
-                <div class="row">
-                    <div class="col-sm-4">
-                        <div class="card">
-                            <img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 href="#" class="card-title">Event 1</h5>
-                                <p class="card-text">.</p>
-                                <p class="card-status">Open</p>
-                                <a href="/Users/justinlee/Desktop/IAB207/n11198885_Lee/eventDetail.html" class="btn btn-primary">Detail</a>
-                            </div>
-                        </div> 
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="card">
-                            <img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Event 2</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <p class="card-status">Sold out</p>
-                                <a href="/Users/justinlee/Desktop/IAB207/n11198885_Lee/eventDetail.html" class="btn btn-primary">Detail</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="card">
-                            <img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Event 3</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <p class="card-status">Open</p>
-                                <a href="#" class="btn btn-primary">Detail</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="card">
-                            <img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Event 4</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <p class="card-status">Inactive</p>
-                                <a href="/Users/justinlee/Desktop/IAB207/n11198885_Lee/eventDetail.html" class="btn btn-primary">Detail</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="card">
-                            <img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Event 5</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <p class="card-status">Sold out</p>
-                                <a href="/Users/justinlee/Desktop/IAB207/n11198885_Lee/eventDetail.html" class="btn btn-primary">Detail</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="card">
-                            <img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Event 6</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <p class="card-status">Cancelled</p>
-                                <a href="/Users/justinlee/Desktop/IAB207/n11198885_Lee/eventDetail.html" class="btn btn-primary">Detail</a>
-                            </div>
-                        </div>
+    <div class="container mt-5">
+        <h2 class="text-left" style="color: #512BD4;">Most popular events</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="./static/img/eventimg1.jpeg" alt="Event 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Dusty Day Out</h5>
+                        <p><h6 class="card-artist">Artist : Mr. Davis</h6></p>
+                        <span class="badge badge-warning">Almost full</span>
+                        <p class="event-date">Sat, 19 Oct 2024, 11:00 AM</p>
+                        <p class="card-text">Dusty Hill Vineyard</p>
+                        <a href="./eventDetail.html" class="btn btn-primary">View Details</a>
                     </div>
                 </div>
             </div>
-
-            <div style="background-color: lightgrey; width:100%; height: 900px;">  
-                <h2>Categorise the event by the theme</h2>
-            
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="categoryDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Select Category
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="categoryDropdown">
-                        <a class="dropdown-item" href="#" data-category="all">All</a>
-                        <a class="dropdown-item" href="#" data-category="rock">Rock</a>
-                        <a class="dropdown-item" href="#" data-category="pop">Pop</a>
-                        <a class="dropdown-item" href="#" data-category="jazz">Jazz</a>
-                    </div>
-                </div>   
-         
-                <div class="row">
-                    <div class="col-sm-4 event-card" data-category="rock">
-                        <div class="card">
-                            <img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Rock Event</h5>
-                                <p class="card-text">This is a rock music event.</p>
-                                <p class="card-status">Open</p>
-                                <a href="/Users/justinlee/Desktop/IAB207/n11198885_Lee/eventDetail.html" class="btn btn-primary">Detail</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-sm-4 event-card" data-category="pop">
-                        <div class="card">
-                            <img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Pop Event</h5>
-                                <p class="card-text">This is a pop music event.</p>
-                                <p class="card-status">Sold out</p>
-                                <a href="/Users/justinlee/Desktop/IAB207/n11198885_Lee/eventDetail.html" class="btn btn-primary">Detail</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-sm-4 event-card" data-category="jazz">
-                        <div class="card">
-                            <img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Jazz Event</h5>
-                                <p class="card-text">This is a jazz music event.</p>
-                                <p class="card-status">Open</p>
-                                <a href="/Users/justinlee/Desktop/IAB207/n11198885_Lee/eventDetail.html" class="btn btn-primary">Detail</a>
-                            </div>
-                        </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="./static/img/eventimg2.jpeg" alt="Event 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Soul Mass Transit System</h5>
+                        <p><h6 class="card-artist">Artist : David Johns</h6></p>
+                        <span class="badge badge-danger">Going fast</span>
+                        <p class="event-date">Fri, 27 Sept 2024, 9:00 PM</p>
+                        <p class="card-text">Prohibition Brisbane</p>
+                        <a href="./eventDetail.html" class="btn btn-primary">View Details</a>
                     </div>
                 </div>
-            </div>            
-        </div> 
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="./static/img/eventimg3.jpeg" alt="Event 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Super Concierto</h5>
+                        <p><h6 class="card-artist">Artist : Jonny Delly</h6></p>
+                        <span class="badge badge-warning">Almost full</span>
+                        <p class="event-date">Fri, 27 Sept 2024, 9:00 PM</p>
+                        <p class="card-text">The Warehouse</p>
+                        <a href="./eventDetail.html" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        <footer class="text-center text-lg-start" style="background-color: white;">
-            <div class="more events" style="background-color: grey;">
-              <p style="color: black;">Find more events with our daily newsletter.</p>
-              <input type="text" placeholder="Search for events">
-              <button>Find</button>
-              <br>
-              <a href="#" style="color: black;">Home</a>
-              <a href="#" style="color: black;">Contact</a>
-              <a href="#" style="color: black;">About</a>
+    <div class="container mt-5">
+        <h2 class="text-left" style="color: #512BD4;">This weekend</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="./static/img/eventimg5.jpeg" alt="Weekend Event 1">
+                    <div class="card-body">
+                        <h5 class="card-title">OUT on TOP</h5>
+                        <p><h6 class="card-artist">Artist : Yelling Loud</h6></p>
+                        <span class="badge badge-secondary">Sales Ended</span>
+                        <p class="event-date">Yesterday, 10:00 AM</p>
+                        <p class="card-text">Spring Fling Ft Brad James</p>
+                        <a href="./eventDetail.html" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
             </div>
-        
-            <div class="text-center text-white p-3" style="background-color: black;">
-              © 2024 Copyright:
-              <a class="text-white" href="#">Minjae Lee</a>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="./static/img/eventimg6.jpeg" alt="Weekend Event 2">
+                    <div class="card-body">
+                        <h5 class="card-title">La Fiesta de los Latinos</h5>
+                        <p><h6 class="card-artist">Artist : Queensland Band</h6></p>
+                        <span class="badge badge-secondary">Sales Ended</span>
+                        <p class="event-date">Yesterday, 9:00 PM</p>
+                        <p class="card-text">DESQUITE SATURDAYS</p>
+                        <a href="./eventDetail.html" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
             </div>
-        </footer>
-    </body>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="./static/img/eventimg7.jpeg" alt="Weekend Event 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Funk Generation Brazilian Funk</h5>
+                        <p><h6 class="card-artist">Artist : BrazilistheBest</h6></p>
+                        <span class="badge badge-secondary">Sales Ended</span>
+                        <p class="event-date">Yesterday, 10:00 PM</p>
+                        <a href="./eventDetail.html" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center text-lg-start" style="background-color: white;">
+        <div class="more events" style="background-color: grey;">
+          <p style="color: black;">Find more events with our daily newsletter.</p>
+          <input type="text" placeholder="Search for events">
+          <button>Find</button>
+          <br>
+          <a href="#" style="color: black;">Home</a>
+          <a href="#" style="color: black;">Contact</a>
+          <a href="#" style="color: black;">About</a>
+        </div>
+    
+        <div class="text-center text-white p-3" style="background-color: black;">
+          © 2024 Copyright:
+          <a class="text-white" href="#">Minjae Lee</a>
+        </div>
+    </footer>
+</body>
 </html>
