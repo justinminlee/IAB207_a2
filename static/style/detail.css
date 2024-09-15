@@ -3,7 +3,6 @@ body {
     background-color: #f8f8f8;
 }
 
-/* Event Detail Container */
 .event-detail-container {
     width: 100%;
     max-width: 1200px;
@@ -13,7 +12,6 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Event Image and Details Section */
 .event-header {
     display: flex;
     flex-wrap: wrap;
@@ -82,7 +80,6 @@ body {
     margin-top: 20px;
 }
 
-/* Description Section */
 .description {
     margin-top: 50px;
 }
@@ -92,7 +89,6 @@ body {
     margin-bottom: 20px;
 }
 
-/* Comments Section */
 .comments {
     margin-top: 50px;
 }
@@ -120,7 +116,6 @@ body {
     margin-bottom: 5px;
 }
 
-/* Footer */
 footer {
     margin-top: 50px;
     padding: 20px;
@@ -137,4 +132,31 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .event-header {
+        flex-direction: column;
+    }
+
+    .event-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .event-info {
+        text-align: center;
+    }
+
+    .comments h3 {
+        font-size: 1.2em;
+    }
+
+    .comment-card {
+        padding: 10px;
+    }
+
+    .total-price {
+        font-size: 1.2em;
+    }
 }

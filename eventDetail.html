@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event Detail</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/Users/justinlee/Desktop/IAB207/n11198885_Lee/static/style/detail.css">
+    <link rel="stylesheet" href="./static/style/detail.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <a class="navbar-brand" href="./index.html">
-            <img src="/Users/justinlee/Desktop/IAB207/n11198885_Lee/static/img/homepage_icon.png" width="50" height="50" alt="">
+        <a class="navbar-brand" href="./home.html">
+            <img src="./static/img/homepage_icon.png" width="50" height="50" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -22,7 +22,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="./index.html">Home</a>
+                    <a class="nav-link" href="./home.html">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./createEvent.html">Create Events</a>
@@ -37,7 +37,7 @@
                     <div class="dropdown-menu" aria-labelledby="profileDropdown">
                         <a class="dropdown-item" href="#">My Account</a>
                         <a class="dropdown-item" href="./bookTicket.html">My Booking</a>
-                        <a class="dropdown-item" href="./index.html">Logout</a>
+                        <a class="dropdown-item" href="./home.html">Logout</a>
                     </div>
                 </li>
             </ul>
@@ -117,22 +117,23 @@
                 </form>
             </div>
         </div>
+
         <footer class="text-center text-lg-start" style="background-color: white;">
             <div class="more events" style="background-color: grey;">
-              <p style="color: black;">Find more events with our daily newsletter.</p>
-              <input type="text" placeholder="Search for events">
-              <button>Find</button>
-              <br>
-              <a href="#" style="color: black;">Home</a>
-              <a href="#" style="color: black;">Contact</a>
-              <a href="#" style="color: black;">About</a>
+                <p style="color: black;">Find more events with our daily newsletter.</p>
+                <input type="text" placeholder="Search for events">
+                <button>Find</button>
+                <br>
+                <a href="#" style="color: black;">Home</a>
+                <a href="#" style="color: black;">Contact</a>
+                <a href="#" style="color: black;">About</a>
             </div>
-        
+
             <div class="text-center text-white p-3" style="background-color: black;">
-              © 2024 Copyright:
-              <a class="text-white" href="#">Minjae Lee</a>
+                © 2024 Copyright:
+                <a class="text-white" href="#">Minjae Lee</a>
             </div>
         </footer>
-
+    </div>
 </body>
 </html>

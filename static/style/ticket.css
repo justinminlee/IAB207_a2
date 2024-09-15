@@ -1,4 +1,3 @@
-
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f8f8;
@@ -18,7 +17,6 @@ h2 {
     margin-bottom: 30px;
 }
 
-/* Booking Item */
 .booking-item {
     display: flex;
     justify-content: space-between;
@@ -30,7 +28,7 @@ h2 {
 }
 
 .booking-item img {
-    width: 150px;
+    width: 300px;
     height: auto;
     border-radius: 5px;
 }
@@ -59,14 +57,12 @@ h2 {
     font-weight: bold;
 }
 
-/* Separate each booking clearly */
 .booking-quantity {
     font-size: 1.2em;
     margin-top: 10px;
     color: #555;
 }
 
-/* Footer */
 footer {
     margin-top: 50px;
     padding: 20px;
@@ -95,8 +91,6 @@ footer a:hover {
     margin-bottom: 10px;
 }
 
-
-/* Mobile Responsive */
 @media (max-width: 768px) {
     .booking-item {
         flex-direction: column;

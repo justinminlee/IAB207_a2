@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="./static/style/home.css">
     <title>Event Finder</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <a class="navbar-brand" href="./index.html">
-            <img src="/Users/justinlee/Desktop/IAB207/n11198885_Lee/static/img/homepage_icon.png" width="50" height="50" alt="">
+        <a class="navbar-brand" href="./home.html">
+            <img src="./static/img/homepage_icon.png" width="50" height="50" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -73,7 +75,7 @@
                     <p>Pop</p>
                 </div>
                 <div class="category-item text-center mx-3">
-                    <img src="https://via.placeholder.com/100" class="rounded-circle" alt="Pop">
+                    <img src="https://via.placeholder.com/100" class="rounded-circle" alt="Jazz">
                     <p>Jazz</p>
                 </div>
             </div>
@@ -88,8 +90,10 @@
                     <img class="card-img-top" src="./static/img/eventimg1.jpeg" alt="Event 1">
                     <div class="card-body">
                         <h5 class="card-title">Dusty Day Out</h5>
-                        <p><h6 class="card-artist">Artist : Mr. Davis</h6></p>
+                        <span class="tag">Rock</span>  
+                        <p></p>
                         <span class="badge badge-warning">Almost full</span>
+                        <p><h6 class="card-artist">Artist : Mr. Davis</h6></p>
                         <p class="event-date">Sat, 19 Oct 2024, 11:00 AM</p>
                         <p class="card-text">Dusty Hill Vineyard</p>
                         <a href="./eventDetail.html" class="btn btn-primary">View Details</a>
@@ -101,8 +105,10 @@
                     <img class="card-img-top" src="./static/img/eventimg2.jpeg" alt="Event 2">
                     <div class="card-body">
                         <h5 class="card-title">Soul Mass Transit System</h5>
-                        <p><h6 class="card-artist">Artist : David Johns</h6></p>
+                        <span class="tag">Pop</span> 
+                        <p></p>
                         <span class="badge badge-danger">Going fast</span>
+                        <p><h6 class="card-artist">Artist : David Johns</h6></p>
                         <p class="event-date">Fri, 27 Sept 2024, 9:00 PM</p>
                         <p class="card-text">Prohibition Brisbane</p>
                         <a href="./eventDetail.html" class="btn btn-primary">View Details</a>
@@ -114,8 +120,10 @@
                     <img class="card-img-top" src="./static/img/eventimg3.jpeg" alt="Event 3">
                     <div class="card-body">
                         <h5 class="card-title">Super Concierto</h5>
-                        <p><h6 class="card-artist">Artist : Jonny Delly</h6></p>
+                        <span class="tag">Jazz</span> 
+                        <p></p>
                         <span class="badge badge-warning">Almost full</span>
+                        <p><h6 class="card-artist">Artist : Jonny Delly</h6></p>
                         <p class="event-date">Fri, 27 Sept 2024, 9:00 PM</p>
                         <p class="card-text">The Warehouse</p>
                         <a href="./eventDetail.html" class="btn btn-primary">View Details</a>
@@ -133,8 +141,10 @@
                     <img class="card-img-top" src="./static/img/eventimg5.jpeg" alt="Weekend Event 1">
                     <div class="card-body">
                         <h5 class="card-title">OUT on TOP</h5>
-                        <p><h6 class="card-artist">Artist : Yelling Loud</h6></p>
+                        <span class="tag">Rock</span> 
+                        <p></p>
                         <span class="badge badge-secondary">Sales Ended</span>
+                        <p><h6 class="card-artist">Artist : Yelling Loud</h6></p>
                         <p class="event-date">Yesterday, 10:00 AM</p>
                         <p class="card-text">Spring Fling Ft Brad James</p>
                         <a href="./eventDetail.html" class="btn btn-primary">View Details</a>
@@ -146,8 +156,10 @@
                     <img class="card-img-top" src="./static/img/eventimg6.jpeg" alt="Weekend Event 2">
                     <div class="card-body">
                         <h5 class="card-title">La Fiesta de los Latinos</h5>
-                        <p><h6 class="card-artist">Artist : Queensland Band</h6></p>
+                        <span class="tag">Pop</span> 
+                        <p></p>
                         <span class="badge badge-secondary">Sales Ended</span>
+                        <p><h6 class="card-artist">Artist : Queensland Band</h6></p>
                         <p class="event-date">Yesterday, 9:00 PM</p>
                         <p class="card-text">DESQUITE SATURDAYS</p>
                         <a href="./eventDetail.html" class="btn btn-primary">View Details</a>
@@ -158,10 +170,13 @@
                 <div class="card">
                     <img class="card-img-top" src="./static/img/eventimg7.jpeg" alt="Weekend Event 3">
                     <div class="card-body">
-                        <h5 class="card-title">Funk Generation Brazilian Funk</h5>
-                        <p><h6 class="card-artist">Artist : BrazilistheBest</h6></p>
+                        <h5 class="card-title">Generation Brazilian Funk</h5>
+                        <span class="tag">Jazz</span> 
+                        <p></p>
                         <span class="badge badge-secondary">Sales Ended</span>
+                        <p><h6 class="card-artist">Artist : BrazilistheBest</h6></p>
                         <p class="event-date">Yesterday, 10:00 PM</p>
+                        <p class="card-text">DESQUITE SATURDAYS</p>
                         <a href="./eventDetail.html" class="btn btn-primary">View Details</a>
                     </div>
                 </div>
